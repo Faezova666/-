@@ -1,0 +1,17 @@
+@startuml 
+start
+: ввод N;
+if (N <= 0) then
+else
+: Seven = false;
+while (N > 0)
+if (N% 10 == 7) then
+: Seven = true;
+: конец;
+else
+:N = N / 10;
+endif 
+
+: вывод;
+stop
+ @enduml

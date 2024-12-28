@@ -1,0 +1,14 @@
+@startuml
+ start
+:ввод x;
+:ввод y ;
+if (y › Math.abs (x) и y < 12) then
+:"да внутри";
+elseif (y == Math.abs (x) или y -- 12) then
+: "на границе";
+else
+:"нет";
+endif
+: **вывод*;
+stop 
+@enduml

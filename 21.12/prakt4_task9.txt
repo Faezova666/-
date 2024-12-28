@@ -1,0 +1,11 @@
+@startuml
+ start
+: ВВОД N;
+: k = 0;
+while ((k + 1) * (k + 1) <= N)
+:k = k + 1;
+endwhile
+
+:**вывод**;|
+stop 
+@enduml

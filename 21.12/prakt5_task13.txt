@@ -1,0 +1,13 @@
+@startuml 
+ start
+: sum = 0;
+if (n % 7 = 0 n n % 10 = 2) then
+:sum = sum + n;
+endif
+if (nubT. getText() пусто) then
+: Завершить метод;
+else
+: "Введены некорректные данные";
+endif  
+stop
+ @enduml

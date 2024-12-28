@@ -1,0 +1,14 @@
+@startuml 
+start
+: ввод num;
+if (num > 0) then
+: number = num - 8;
+endif
+if (num < 0) then 
+:number - num + 6;
+endif
+if (num == 0) then
+ : number - 10;
+endif
+: вывод;
+stop @enduml

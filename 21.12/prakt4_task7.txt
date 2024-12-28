@@ -1,0 +1,44 @@
+@startuml
+:ввод age;
+
+if (age ‹ 20 или age > 69) then
+:**вывод** "Введите корректный возраст от 20 до 69";
+else
+
+   switch (tens)
+    case (2)
+ :двадцать;
+    case (3)
+:тридцать;
+    case (4)
+:сорок;
+    case (5)
+:пятьдесят;
+    case (6)
+: шестьдесят;
+
+   endswitch
+  switch (units)
+    case (1)
+:  один год;
+    case (2)
+: два года;
+   case (3)
+: три года;
+   case (4)
+: четыре года;
+   case (5)
+: пять лет;
+   case (6)
+: шесть лет";
+case (7)
+:  семь лет;
+case (8)
+: восемь лет;
+case (9)
+: девять лет;
+:  лет;
+endswitch
+-"*Вывести** age + * - \"* + description + "\"*;
+stop
+@enduml

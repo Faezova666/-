@@ -1,0 +1,16 @@
+@startuml
+ start
+if (data.size() != 2) then
+else
+: a =  (0);
+: b =  (1);
+: count = 0;
+: for (i = a; i <= b; i++);
+if (1 % 2 == 0) then
+
+: count = count + 1;
+endif
+: вывод: count;
+endif
+stop 
+@endum1

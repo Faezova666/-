@@ -1,0 +1,14 @@
+@startuml 
+start
+: ввод п; 
+: ввод а;
+if (n <= 0) then
+: "N должен быть больше 0";
+else
+: currentPower = a;
+: for (i = 1; i <= n; i++)
+: currentPower * a;
+endif
+: вывод;
+stop 
+@enduml

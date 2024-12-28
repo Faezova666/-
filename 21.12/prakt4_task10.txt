@@ -1,0 +1,13 @@
+@startuml 
+start
+: ввод Р;
+if (P <= 0или P >= 25) then
+else
+   : k = 0;
+while (CD <= TARGET_DEPOSIT)
+   : CD = CD + (CD * P / 100);
+   :k = k + 1;
+endwhile
+: вывод;
+endif
+ stop

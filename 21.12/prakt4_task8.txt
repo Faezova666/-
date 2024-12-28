@@ -1,0 +1,34 @@
+@startuml
+start
+:ввод Num;
+:ввод Value;
+if (Num < 1 или Num › 4) then
+'Ничего не делаем (пустой блок if)';
+else
+:Radius = 1, Diametr = 1, Length = 1, Area = 1;
+switch (Num)
+case (1)
+:Radius = Value;
+:Diametr = 2 * Radius;
+:Length = 2 * 3.14 * Radius;
+:Area = 3.14 * pow (Radius, 2);
+case (2)
+:Diametr = Value;
+:Radius = Diametr / 2;
+:Length = 2 * 3.14 * Radius;
+:Area = 3.14 * pow (Radius, 2);
+case (3)
+:Length = Value;
+:Radius = Length / (2 * 3.14);
+:Diametr = 2 * Radius;
+:Area = 3.14 * pow(Radius, 2);
+case (4)
+:Area = Value;
+:Radius = sqrt(Area / 3.14);
+:Diametr = 2 * Radius;
+:Length = 2 * 3.14 * Radius;
+endswitch
+:вывод ;
+endif 
+stop
+@enduml

@@ -1,0 +1,10 @@
+@startuml 
+start
+: ввод num;
+: second = (num / 10) % 10;
+: last = num % 10;
+if (second › last) then
+elseif (second ‹ last) then
+endif
+: вывод;
+stop @enduml

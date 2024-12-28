@@ -1,0 +1,16 @@
+@startuml 
+start
+:﻿﻿ввод а; 
+: ввод b;
+:﻿﻿ввод С;
+: m = (a + pow(b, 2)) / c;
+: k = m % 3;
+if (k == 0) then
+: y = floor (pow(E, m + c)) ;
+elseif (k == 1) then
+:y = floor (log(a / b));
+else if (k == 2) then
+: y = floor (sqrt(abs (pow(a + b, 2) + c)));
+endif
+: вывод;
+stop
