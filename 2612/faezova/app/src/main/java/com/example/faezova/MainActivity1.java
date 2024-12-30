@@ -33,7 +33,7 @@ public class MainActivity1 extends AppCompatActivity {
 
         double R1 = Double.parseDouble(inputR1);
         double R2 = Double.parseDouble(inputR2);
-        if (R1 <= R2) {
+        if (R1 < R2) {
             resultField.setText("Ошибка: R1 должно быть больше R2");
             return;
         }
